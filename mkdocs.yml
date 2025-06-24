@@ -1,0 +1,48 @@
+site_name: Srimad Bhagavad Gita
+site_description: A complete reference of the Bhagavad Gita in Sanskrit, transliteration, translations, and commentaries.
+site_author: Rajesh Prashanth Anandavadivel
+repo_url: https://github.com/rajeshprasanth/Srimad_Bhagavad_Gita
+site_url: https://rajeshprasanth.github.io/Srimad_Bhagavad_Gita/
+theme:
+  name: material
+  palette:
+    primary: deep orange       # Saffron-like warm color
+    accent: amber              # Golden accent
+  font:
+    text: "Noto Serif"         # Classic serif font with good Indic support
+    code: "Roboto Mono"
+  features:
+    - navigation.tabs
+    - navigation.top
+    - content.action.edit
+    - content.code.annotate
+
+nav:
+  - Home: index.md
+  - Chapters:
+      - Chapter 1: chapters/chapter01.md
+      - Chapter 2: chapters/chapter02.md
+      - Chapter 3: chapters/chapter03.md
+      - Chapter 4: chapters/chapter04.md
+      # Add all 18 chapters...
+  - Translations:
+      - English: translations/english.md
+      - Hindi: translations/hindi.md
+  - Docs:
+      - Overview: docs/overview.md
+      - Glossary: docs/glossary.md
+      - Commentaries:
+          - Shankaracharya: docs/commentaries/shankaracharya.md
+          - Ramanujacharya: docs/commentaries/ramanujacharya.md
+          - Madhvacharya: docs/commentaries/madhvacharya.md
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - tables
+  - admonition
+  - footnotes
+  - codehilite
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.arithmatex
